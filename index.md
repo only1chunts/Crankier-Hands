@@ -6,16 +6,16 @@
     {{ item.page-link }}
 	{{item.description}}
     {{ item.name }}
-    ({{ item.name | size }} items)
   </li>
 {% endfor %}
 {% endfor %}
 </ul>
 
+<!--
        {% for thing in site.data.schedule %}
        {% for timeslot in thing.timeslots %}
        {{timeslot.title}}
        {{timeslot.speaker}}
        {% endfor %}
        {% endfor %}
-		
+-->		
