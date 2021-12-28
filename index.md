@@ -1,4 +1,4 @@
-
+<!--
 
 {% for thing in site.data.for-sale %}
 {% for item in thing.items %}
@@ -10,12 +10,17 @@
 {% endfor %}
 {% endfor %}
 
+-->
 
-<!--
-       {% for thing in site.data.schedule %}
-       {% for timeslot in thing.timeslots %}
-       {{timeslot.title}}
-       {{timeslot.speaker}}
-       {% endfor %}
-       {% endfor %}
--->		
+ {% if site.data.for-sale.items == nil %}
+        <div class="alert alert-warning rounded text-center m-1">
+            <p>No items currently for sale</p>
+        </div>
+        {% else %}
+        <div>
+            {% for item in site.data.for-sale.items %}
+                <a href="{{ item.page-link }}"><img style="vertical-align:middle;margin:10px 10px" width="200" src="{{ site.baseurl }}{{ item.image1 }}" alt="{{ item.name }}"></a>
+            {% endfor %}
+        </div>
+        {% endif %}
+		
