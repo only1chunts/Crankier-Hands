@@ -1,4 +1,15 @@
 
+{% for thing in site.data.for-sale %}
+{% for item in thing.items %}
+    
+    <a href="{{ item.page-link }}"><img style="vertical-align:middle;margin:10px 10px" width="200" src="{{ site.baseurl }}{{ item.image1 }}" alt="{{ item.name}}"></a>  
+	{{ item.name }}    
+	{{ item.description }}
+	
+{% endfor %}
+{% endfor %}
+
+<!--
  {% if site.data.for-sale.items == nil %}
             <p>No items currently for sale</p>
         {% else %}
@@ -8,4 +19,4 @@
             {% endfor %}
         </div>
         {% endif %}
-		
+-->
