@@ -25,7 +25,7 @@ Here we provide a simple search tool to assist finding particular items.<br>
   $(document).ready(function(){
 
     var data = 
-{% data.for-sale %}
+{% for-sale.yml %}
 ;
 
 $('#txt-search').keyup(function(){
