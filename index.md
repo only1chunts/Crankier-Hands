@@ -2,6 +2,7 @@
 
 {% include item-listing.html %}  
 
+<!-- 
 {% for thing in site.data.for-sale %}
 {% for item in thing.items %}
     
@@ -12,4 +13,4 @@
 {% endfor %}
 {% endfor %}
 
-
+-->
