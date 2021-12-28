@@ -3,9 +3,9 @@
 {% for thing in site.data.for-sale %}
 {% for item in thing.items %}
   <li>
-    <a href="{{ item.page-link }}" class="img-responsive" alt="{{item.description}}">
-      {{ item.name }}
-    </a>
+    {{ item.page-link }}
+	{{item.description}}
+    {{ item.name }}
     ({{ item.name | size }} items)
   </li>
 {% endfor %}
