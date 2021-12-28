@@ -9,6 +9,7 @@
     ({{ item.name | size }} items)
   </li>
 {% endfor %}
+{% endfor %}
 </ul>
 
        {% for thing in site.data.schedule %}
