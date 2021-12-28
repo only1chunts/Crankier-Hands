@@ -1,7 +1,6 @@
 
 <ul>
-{% for items in site.data %}
-{% assign item = item.name[1] %}
+{% for items in site.data.for-sale %}
   <li>
     <a href="{{ item.page-link }}" class="img-responsive" alt="{{item.description}}">
       {{ item.name }}
