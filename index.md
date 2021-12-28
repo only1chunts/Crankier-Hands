@@ -1,15 +1,15 @@
 
-<ul>
+
 {% for thing in site.data.for-sale %}
 {% for item in thing.items %}
-  <li>
+
     {{ item.page-link }}
-	{{item.description}}
+	{{ item.description }}
     {{ item.name }}
-  </li>
+
 {% endfor %}
 {% endfor %}
-</ul>
+
 
 <!--
        {% for thing in site.data.schedule %}
