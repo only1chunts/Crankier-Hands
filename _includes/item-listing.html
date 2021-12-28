@@ -2,18 +2,18 @@
 <html lang=" en ">
 
 <body>
+
 <table>
   <tr>
     <th>Item</th>
     <th>Description</th>
   </tr>
-  <tr>
 {% for thing in site.data.for-sale %}
-{% for item in thing.items %}
- <tr>   
-    <a href="{{ item.page-link }}"><img style="vertical-align:middle;margin:10px 10px" width="200" src="{{ site.baseurl }}/{{ item.image1 }}" alt="{{ item.name}}"></a>  
-</tr>
-<tr>	{{ item.name }}. {{ item.description }}
+{% for item in thing.items %}   
+<tr>
+ <td>   <a href="{{ item.page-link }}"><img style="vertical-align:middle;margin:10px 10px" width="200" src="{{ site.baseurl }}/{{ item.image1 }}" alt="{{ item.name}}"></a>  
+</td>
+<td>	{{ item.name }}. {{ item.description }}</td>
 </tr>
 	
 {% endfor %}
