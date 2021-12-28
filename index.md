@@ -1,6 +1,6 @@
 
 <ul>
-{% for items in site.data.for-sale %}
+{% for section in site.data.for-sale %}
   <li>
     <a href="{{ item.page-link }}" class="img-responsive" alt="{{item.description}}">
       {{ item.name }}
@@ -9,3 +9,12 @@
   </li>
 {% endfor %}
 </ul>
+
+       {% for day in site.data.schedule %}
+        <div>
+           {% for timeslot in day.timeslots %}
+<p class="text-muted">{{timeslot.title}}</p>
+{{timeslot.speaker}}
+
+        {% endfor %}
+		
