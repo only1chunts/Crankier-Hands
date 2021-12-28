@@ -17,4 +17,5 @@
 {{timeslot.speaker}}
 
         {% endfor %}
+		  {% endfor %}
 		
