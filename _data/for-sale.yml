@@ -1,7 +1,7 @@
 #furniture
 - section: "Furniture"
   sectiondescription: ""
-  itemslots:
+  items:
   - name: "first"
     image1: "item1-1.png"
     image2: "item1-2.png"
