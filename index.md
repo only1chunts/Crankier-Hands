@@ -10,12 +10,10 @@
 {% endfor %}
 </ul>
 
-       {% for day in site.data.schedule %}
-        <div>
-           {% for timeslot in day.timeslots %}
-<p class="text-muted">{{timeslot.title}}</p>
-{{timeslot.speaker}}
-
-        {% endfor %}
-		  {% endfor %}
+       {% for thing in site.data.schedule %}
+       {% for timeslot in thing.timeslots %}
+       <p class="text-muted">{{timeslot.title}}</p>
+       {{timeslot.speaker}}
+       {% endfor %}
+       {% endfor %}
 		
