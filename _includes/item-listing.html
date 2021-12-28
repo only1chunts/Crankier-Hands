@@ -1,8 +1,6 @@
 
  {% if site.data.for-sale.items == nil %}
-        <div class="alert alert-warning rounded text-center m-1">
             <p>No items currently for sale</p>
-        </div>
         {% else %}
         <div>
             {% for item in site.data.for-sale.items %}
