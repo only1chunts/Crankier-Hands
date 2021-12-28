@@ -13,7 +13,7 @@ Here we provide a simple search tool to assist finding particular items.<br>
 	</div>
 	<form role="form">
         <div class="form-group">
-          <input type="input" class="form-control input-lg" id="txt-search" placeholder="Start typing to searh">
+          <input type="input" class="form-control input-lg" id="txt-search" placeholder="Start typing to search">
         </div>
 	</form>
 	<div id="filter-records"></div>
@@ -40,8 +40,8 @@ $('#txt-search').keyup(function(){
             var count = 1;
 			  $.each(data, function(key, val){
 				if ((val.item.search(regex) != -1) || (val.description.search(regex) != -1)) {
-				  output += '<h5>' +val.item+ '</h5>'; 
-				  output += '<strong>Description: </strong>' + val.description + '</br>';
+				  output += '<h5>' +val.item.name+ '</h5>'; 
+				  output += '<strong>Description: </strong>' + val.item.description + '</br>';
 				  if(count%2 == 0){
 					output += '</div><div class="row">'
 				  }
