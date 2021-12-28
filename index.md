@@ -2,11 +2,11 @@
 
 {% for thing in site.data.for-sale %}
 {% for item in thing.items %}
-    <br> item
-    <br>{{ item.name }}
-    <br>{{ item.page-link }}
-	<br>{{ item.description }}
-	<br>
+    
+    {{ item.name }}
+    {{ item.page-link }}
+	{{ item.description }}
+	
 {% endfor %}
 {% endfor %}
 
