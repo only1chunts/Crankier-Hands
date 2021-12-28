@@ -1,6 +1,7 @@
 
 <ul>
-{% for section in site.data.for-sale %}
+{% for thing in site.data.for-sale %}
+{% for item in thing.items %}
   <li>
     <a href="{{ item.page-link }}" class="img-responsive" alt="{{item.description}}">
       {{ item.name }}
