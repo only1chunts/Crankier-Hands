@@ -12,7 +12,7 @@
 
        {% for thing in site.data.schedule %}
        {% for timeslot in thing.timeslots %}
-       <p class="text-muted">{{timeslot.title}}</p>
+       {{timeslot.title}}
        {{timeslot.speaker}}
        {% endfor %}
        {% endfor %}
