@@ -1,15 +1,29 @@
-<!--
-			<div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-				<!--/.carousel-indicator ->
-				 <ol class="carousel-indicators">
-					<li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
-					<li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
-					<li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
-				</ol><!-- /ol-->
-				<!--/.carousel-indicator -->
+{
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
 
-				<div class="owl-carousel">
-					{% for item in site.data.carousel.items %} 
+img {
+  width: 100%;
+}
+
+.siema {
+  margin: 1rem 0;
+}
+
+<script>
+const mySiema = new Siema({
+  duration: 500,
+  loop: true,
+});
+
+// listen for keydown event
+setInterval(() => mySiema.next(), 1000)
+</script>
+
+<div class="siema">
+  					{% for item in site.data.carousel.items %} 
 					<div> <!--Your Content -->
 								<div class="item">
 									<div id="text-part"
@@ -27,9 +41,17 @@
 								</div><!--/.item-->
 					</div> <!-- ./your content-->
 					{% endfor %}
-				</div> <!-- ./owl-carousel -->
-<!--			</div> <!-- ./header-carousel -->
+</div>
 
+<!--
+			<div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<!--/.carousel-indicator ->
+				 <ol class="carousel-indicators">
+					<li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
+					<li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
+					<li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
+				</ol><!-- /ol-->
+				<!--/.carousel-indicator -->
 <!-- was sort of working				<!--/.carousel-inner ->
 				<div class="carousel-inner" role="listbox">
 					<!-- .item ->
