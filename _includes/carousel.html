@@ -23,8 +23,9 @@ setInterval(() => mySiema.next(), 1000)
 </script>
 
 <div class="siema">
-  					{% for item in site.data.carousel.items %} 
+  					
 					<div> <!--Your Content -->
+					{% for item in site.data.carousel.items %} 
 								<div class="item">
 									<div id="text-part"
 									<h4>{{item.name}}</h4>
@@ -39,8 +40,9 @@ setInterval(() => mySiema.next(), 1000)
 											<img src="{{item.image}}" alt="slider image">
 									</div><!--/.image-part-->
 								</div><!--/.item-->
+					{% endfor %}		
 					</div> <!-- ./your content-->
-					{% endfor %}
+					
 </div>
 
 <!--
