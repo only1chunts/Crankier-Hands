@@ -1,18 +1,16 @@
-#carousel
-- section: "carousel"
-  sectiondescription: "add the 3 items to be included in the carousel here"
-  items:
-  - name: "rocking chair"
+---
+carouselitems:
+  - item: "rocking chair"
     image: "images/image1-1.jpg"
     description: "Compact rocker rocking chair, reupholstered in grey tartan fabric."
     price: "£250.00"
     oldprice: "£350.00"
-  - name: "Xmas tree"
+  - item: "Xmas tree"
     image: "images/image2-1.jpg"
     description: "Eco-friendly upcycled Xmas tree. Created from pallet wood."
     price: "£75.00"
     oldprice: "£150.00"
-  - name: "SOLD - Retro drinks cabinet"
+  - item: "SOLD - Retro drinks cabinet"
     image: "images/image3-1.jpg"
     description: ""
     price: "£85.00"
