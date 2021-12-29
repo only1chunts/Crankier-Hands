@@ -1,8 +1,53 @@
 
-<html lang=" en ">
+				<!--/.carousel-inner -->
+				<div class="carousel-inner" role="listbox">
+					<!-- .item -->
+					{% for thing in site.data.carousel %}
+					{% for item in thing.items %}  
+					<div class="item active">
+						<div class="single-slide-item slide1">
+							<div class="container">
+								<div class="welcome-hero-content">
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-txt">
+													<h4>{{item.name}}</h4>
+													<p>
+														{{item.description}}
+													</p>
+													<div class="packages-price">
+														<p>
+															{{item.price}}
+															<del>{{item.oldprice}}</del>
+														</p>
+													</div>
+													<button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
+														<span class="lnr lnr-plus-circle"></span>
+														add <span>to</span> my list
+													</button>
+													<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#'">
+														more info
+													</button>
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+										<div class="col-sm-5">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-img">
+													<img src="{{item.image}}" alt="slider image">
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+								</div><!--/.welcome-hero-content-->
+							</div><!-- /.container-->
+						</div><!-- /.single-slide-item-->
+						{% end for %}
+						{% end for %}
 
-<body>
 
+<!--
 <table>
   <tr>
     <th>Item</th>
@@ -19,7 +64,7 @@
 {% endfor %}
 {% endfor %}
 
-<!--
+
  {% if site.data.for-sale.items == nil %}
             <p>No items currently for sale</p>
         {% else %}
