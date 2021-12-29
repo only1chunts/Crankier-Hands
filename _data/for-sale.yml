@@ -1,6 +1,6 @@
 #furniture
 - section: "Furniture"
-  sectiondescription: ""
+  sectiondescription: "Upcycled, re-furnished, reupholstered and generally made good items that have been pre-loved."
   items:
   - name: "rocking chair"
     image1: "images/image1-1.jpg"
@@ -44,7 +44,7 @@
     barcode: "281220222"
 #brik-a-brak
 - section: "brik-a-brak"
-  sectiondescription: ""
+  sectiondescription: "Smaller pre-loved items such as pyrex and crockery."
   items:
   - name: "third"
     image1: "images/image3-1.png"
