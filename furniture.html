@@ -10,11 +10,11 @@ layout : default
 				</div><!--/.section-header-->
 				<div class="new-arrivals-content">
 					<div class="row">
-						{% for items in site.data.for-sale.items %}
+						{% for item in site.data.for-sale.items %}
 						<div class="col-md-3 col-sm-4">
 							<div class="single-new-arrival">
 								<div class="single-new-arrival-bg">
-									<img src="{{item.image1}}" alt="{{item.name}}">
+									<img src={{item.image1}} alt={{item.name}}>
 									<div class="single-new-arrival-bg-overlay"></div>
 									<div class="new-arrival-cart">
 										<p>
@@ -27,7 +27,7 @@ layout : default
 										</p>
 									</div>
 								</div>
-								<h4><a href="{{item.page-link}}" >{{item.name}}</a></h4>
+								<h4><a href={{item.page-link}} >{{item.name}}</a></h4>
 								<p class="arrival-product-price">{{item.price}}</p>
 							</div>
 						</div>
