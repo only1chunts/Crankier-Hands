@@ -1,11 +1,15 @@
 ---
 layout : default
 ---
-{% for item in site.data.furniture.items %}
-{{item.name}}
-{{item.description}}
-{{item.price}}
-{% for image in item.images %}
-<img src={{item.image}}>
-{% endfor %}
-{% endfor %}
+<div class="container">
+	{% for item in site.data.furniture.items %}
+	<div class="row">
+		{{item.name}}<br>
+		{{item.description}}<br>
+		{{item.price}}<br>
+		{% for image in item.images %}
+		<img src={{item.image}}>
+		{% endfor %}
+	</div> <!-- ./row -->
+	{% endfor %}
+</div> <!-- ./container-->
