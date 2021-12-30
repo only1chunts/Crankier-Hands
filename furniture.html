@@ -21,9 +21,10 @@ layout : default
 	{% endfor %}
 </div> <!-- ./row-->
 <p>
-		<!--populer-products start -->
 			<div class="container">
 				{% for item in site.data.furniture.items %}
+				<p>
+				<section id="{{item.name}}">
 				<div class="populer-products-content">
 				<h2>{{item.name}}</h2><br>
 				<h4>{{item.description}}</h4>
@@ -51,7 +52,8 @@ layout : default
 						</div>
 					</div>
 				</div>
+				</section>
+				</p>
 				{% endfor %}
 			</div> <!-- ./container -->
-		<!--populer-products end-->
 </p>
