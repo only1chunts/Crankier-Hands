@@ -17,21 +17,16 @@ layout : default
 									<img src={{item.image1}} alt={{item.name}}>
 									<div class="single-new-arrival-bg-overlay"></div>
 									<div class="new-arrival-cart">
-										<p>
-											<span class="lnr lnr-cart"></span>
-											<a href="#">add <span>to </span> my list</a>
-										</p>
+										<p>{{item.description}}</p>
 										<p class="arrival-review pull-right">
 											<span class="lnr lnr-heart"></span>
 											<span class="lnr lnr-frame-expand"></span>
 										</p>
 									</div>
 								</div>
-								<div class="popup" onclick="myFunction()"> <h4>{{item.name}}</h4>
-								<span class="popuptext" id="myPopup">A Simple Popup!</span>
+								<div> <h4>{{item.name}}</h4>
 								</div>
 								<p class="arrival-product-price">{{item.price}}</p>
-								<p class="arrival-product-price">{{item.description}}</p>
 							</div>
 						</div>
 						{% endfor %}
