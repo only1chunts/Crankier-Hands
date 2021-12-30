@@ -6,7 +6,7 @@ layout : default
 		<section id="new-arrivals" class="new-arrivals">
 			<div class="container">
 				<div class="section-header">
-					<h2>Bric-a-Brac</h2>
+					<h2>Bric-<span>a-</span>Brac</h2>
 				</div><!--/.section-header-->
 				<div class="new-arrivals-content">
 					<div class="row">
@@ -28,8 +28,9 @@ layout : default
 									</div>
 								</div>
 								<div class="popup" onclick="myFunction()"> <h4>{{item.name}}</h4>
-								<span class="popuptext" id="myPopup">{{item.description}}</span>
+								<span class="popuptext" id="{{item.name}}">{{item.description}}</span>
 								</div>
+								<!-- <p class="arrival-product-price"><h4>{{item.name}}</h4></p> -->
 								<p class="arrival-product-price">{{item.price}}</p>
 							</div>
 						</div>
