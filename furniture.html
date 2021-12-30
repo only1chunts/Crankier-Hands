@@ -3,15 +3,19 @@ layout : default
 ---
 <div class="container">
 	{% for item in site.data.furniture.items %}
-	<div class="row">
 		{{item.name}}<br>
 		{{item.description}}<br>
 		{{item.price}}<br>
-			{% for image in item.images %}
+	<div class="row">
 			<div class="single-new-arrival-bg">
-				<img src={{image.image}}>
+				<img src={{item.image1}}>
 			</div>
-			{% endfor %}
+			<div class="single-new-arrival-bg">
+				<img src={{item.image2}}>
+			</div>
+			<div class="single-new-arrival-bg">
+				<img src={{item.image3}}>
+			</div>
 	</div> <!-- ./row -->
 	{% endfor %}
 </div> <!-- ./container-->
