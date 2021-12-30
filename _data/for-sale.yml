@@ -42,7 +42,7 @@ furniture:
     price: "150.00"
     barcode: "281220222"
 ---
-bric-a-brac:
+bricabrac:
   - name: "Blue drinks cabinet"
     image1: "images/image5-1.jpg"
     image2: "images/image5-2.jpg"
