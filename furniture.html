@@ -1,37 +1,11 @@
 ---
 layout : default
 ---
-
-		<!--new-arrivals start -->
-		<section id="new-arrivals" class="new-arrivals">
-			<div class="container">
-				<div class="section-header">
-					<h2>Furniture</h2>
-				</div><!--/.section-header-->
-				<div class="new-arrivals-content">
-					<div class="row">
-						{% for item in site.data.furniture.items %}
-						<div class="col-md-3 col-sm-4">
-							<div class="single-new-arrival">
-								<div class="single-new-arrival-bg">
-									<img src={{item.image1}} alt={{item.name}}>
-									<div class="single-new-arrival-bg-overlay"></div>
-									<div class="new-arrival-cart">
-										<p>{{item.description}}</p>
-										<p class="arrival-review pull-right">
-											<span class="lnr lnr-heart"></span>
-											<span class="lnr lnr-frame-expand"></span>
-										</p>
-									</div>
-								</div>
-								<div> <h4>{{item.name}}</h4>
-								</div>
-								<p class="arrival-product-price">{{item.price}}</p>
-							</div>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-			</div><!--/.container-->
-		
-		</section><!--/.new-arrivals-->
+{% for item in site.data.furniture.items %}
+{{item.name}}
+{{item.description}}
+{{item.price}}
+{% for image in item.images %}
+<img src={{item.image}}>
+{% endfor %}
+{% endfor %}
