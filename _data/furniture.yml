@@ -1,5 +1,3 @@
----
-furniture:
   items:
   - name: "Rocking Chair"
     image1: "images/image1-1.jpg"
@@ -41,21 +39,3 @@ furniture:
     description: "Glass fronted display cabinet"
     price: "150.00"
     barcode: "281220222"
----
-bricabrac:
-  - name: "Blue drinks cabinet"
-    image1: "images/image5-1.jpg"
-    image2: "images/image5-2.jpg"
-    image3: "images/image5-3.jpg"
-    page-link: "item5.html"
-    description: "Glass fronted display cabinet"
-    price: "150.00"
-    barcode: "281220222"
-  - name: "Pyrex jug"
-    image1: "images/image6-1.jpg"
-    image2: "images/image6-2.jpg"
-    image3: "images/image6-3.jpg"
-    page-link: "item6.html"
-    description: "Some random pyrex thing"
-    price: "150.00"
-    barcode: ""
