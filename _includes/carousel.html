@@ -1,4 +1,11 @@
-{
+<div class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="MbPbLM" data-user="pawelgrzybek"  data-prefill='{"title":"Siema - auto play &amp; loop","tags":[],"scripts":["https://pawelgrzybek.github.io/siema/assets/siema.min.js"],"stylesheets":[]}'>
+  <pre data-lang="html">&lt;div class="siema">
+  &lt;div>&lt;img src="https://pawelgrzybek.github.io/siema/assets/siema--pink.svg" alt="Siema image" />&lt;/div>
+  &lt;div>&lt;img src="https://pawelgrzybek.github.io/siema/assets/siema--yellow.svg" alt="Siema image" />&lt;/div>
+  &lt;div>&lt;img src="https://pawelgrzybek.github.io/siema/assets/siema--pink.svg" alt="Siema image" />&lt;/div>
+  &lt;div>&lt;img src="https://pawelgrzybek.github.io/siema/assets/siema--yellow.svg" alt="Siema image" />&lt;/div>
+&lt;/div></pre>
+  <pre data-lang="scss" data-option-autoprefixer="true">body {
   width: 100%;
   max-width: 30rem;
   margin: 0 auto;
@@ -11,20 +18,22 @@ img {
 .siema {
   margin: 1rem 0;
 }
-
-<script>
-const mySiema = new Siema({
-  duration: 500,
+</pre>
+  <pre data-lang="babel">const mySiema = new Siema({
+  duration: 250,
   loop: true,
 });
 
 // listen for keydown event
-setInterval(() => mySiema.next(), 1000)
-</script>
+setInterval(() => mySiema.next(), 1000)</pre></div>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+<!--
 
 <div class="siema">
   					
-					<div> <!--Your Content -->
+					<div> <!--Your Content ->
 					{% for item in site.data.carousel.items %} 
 								<div class="item">
 									<div id="text-part"
@@ -35,13 +44,13 @@ setInterval(() => mySiema.next(), 1000)
 										</div>
 										<button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
 										<span class="lnr lnr-plus-circle"></span>add <span>to</span>my list	</button>
-									</div><!--/.text-part-->
+									</div><!--/.text-part->
 									<div id="image-part">
 											<img src="{{item.image}}" alt="slider image">
-									</div><!--/.image-part-->
-								</div><!--/.item-->
+									</div><!--/.image-part->
+								</div><!--/.item->
 					{% endfor %}		
-					</div> <!-- ./your content-->
+					</div> <!-- ./your content->
 					
 </div>
 
