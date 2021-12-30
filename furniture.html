@@ -14,7 +14,7 @@ layout : default
 						<div class="col-md-3 col-sm-4">
 							<div class="single-new-arrival">
 								<div class="single-new-arrival-bg">
-									<img src={{item.image1}} alt={{item.name}} height="500">
+									<img src={{item.image1}} alt={{item.name}}>
 									<div class="single-new-arrival-bg-overlay"></div>
 									<div class="new-arrival-cart">
 										<p>
@@ -29,6 +29,7 @@ layout : default
 								</div>
 								<h4><a href=https://only1chunts.github.io/Crankier-Hands/#{{item.page-link}} >{{item.name}}</a></h4>
 								<p class="arrival-product-price">{{item.price}}</p>
+								<p class="arrival-product-price">{{item.description}}</p>
 							</div>
 						</div>
 						{% endfor %}
