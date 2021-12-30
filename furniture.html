@@ -1,6 +1,7 @@
 ---
 layout : default
 ---
+<!--
 <div class="row">
 	{% for item in site.data.furniture.items %}
 		{{item.name}}<br>
@@ -16,6 +17,42 @@ layout : default
 			<div class="single-new-arrival-bg">
 				<img src={{item.image3}}>
 			</div>
-	</div> <!-- ./col-sm-7 -->
+	</div> <!-- ./col-sm-7 ->
 	{% endfor %}
 </div> <!-- ./row-->
+<p>
+		<!--populer-products start -->
+		<section id="populer-products" class="populer-products">
+			<div class="container">
+				{% for item in site.data.furniture.items %}
+				<div class="populer-products-content">
+				<h2>{{item.name}}</h2><br>
+				<h4>{{item.description}}</h4>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="single-populer-products">
+								<div class="single-populer-product-img mt40">
+									<img src="{{item.image1}}" alt="populer-products images">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-populer-products">
+								<div class="single-populer-product-img mt40">
+									<img src="{{item.image2}}" alt="populer-products images">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-populer-products">
+								<div class="single-populer-product-img mt40">
+									<img src="{{item.image3}}" alt="populer-products images">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- ./container -->
+		</section><!--/.populer-products-->
+		<!--populer-products end-->
+</p>
