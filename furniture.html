@@ -7,9 +7,11 @@ layout : default
 		{{item.name}}<br>
 		{{item.description}}<br>
 		{{item.price}}<br>
-		{% for image in item.images %}
-		<img src={{item.image}}>
-		{% endfor %}
+			{% for image in item.images %}
+			<div class="single-new-arrival-bg">
+				<img src={{image.image}}>
+			</div>
+			{% endfor %}
 	</div> <!-- ./row -->
 	{% endfor %}
 </div> <!-- ./container-->
