@@ -4,21 +4,6 @@ layout : default
 <br>
 <br>
 <br>
-{% for item in site.data.bricabrac.items %}
-<div class="row" align="center" width="100%">
-<ul>
-  <li>
-		<p><a href="{{base.url.}}#{{item.name}}" id="{{item.name}}"> <b>{{item.name}}</b></a><br>
-		{{item.description}}<br></p>
-		{{item.price}}</p>
-  </li>
-  {% for image in item.images %}
-  <li><img src={{image.location}} width="150" height="150"></li>
-  {% endfor %}
-</ul>
-</div>
-<br> 
-{% endfor %}
 
 
   <div>
