@@ -5,6 +5,7 @@ layout : default
 <br>
 <br>
 {% for item in site.data.furniture.items %}
+<div class="row">
 <ul>
   <li>
 		<p>{{item.name}}<br>
@@ -15,6 +16,7 @@ layout : default
   <img src={{item.image2}} width="150" height="150"></div>  
   <img src={{item.image3}} width="150" height="150"></div>
 </ul>
+</div> 
 {% endfor %}
 
 <!--
