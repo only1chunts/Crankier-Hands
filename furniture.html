@@ -8,15 +8,16 @@ layout : default
 <div class="row">
 <ul>
   <li>
-		<p>{{item.name}}<br>
+		<p id="{{item.name}}"> <b>{{item.name}}</b><br>
 		{{item.description}}<br></p>
 		{{item.price}}</p>
   </li>
-  <li><img src={{item.image1}} width="150" height="150"></li>
-  <li><img src={{item.image2}} width="150" height="150"></li>  
-  <li><img src={{item.image3}} width="150" height="150"></li>
+  {% for image in item.images %}
+  <li><img src={{item.image1}} width="300" height="300"></li>
+  {% endfor %}
 </ul>
-</div> 
+</div>
+<br> 
 {% endfor %}
 
 <!--
