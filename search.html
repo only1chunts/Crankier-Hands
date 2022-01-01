@@ -41,7 +41,7 @@ $('#txt-search').keyup(function(){
             var output = '<div class="row">';
             var count = 1;
 			  $.each(data, function(key, val){
-				if ((val.mixsId.search(regex) != -1) || (val.label.search(regex) != -1) || (val.definition.search(regex) != -1)) {
+				if ((val.name.search(regex) != -1) || (val.price.search(regex) != -1) || (val.description.search(regex) != -1)) {
 				  output += '<a href=' +val.name+ '><h5>' +val.name+ '</h5></a>'; 
 				  if(count%2 == 0){
 					output += '</div><div class="row">'
