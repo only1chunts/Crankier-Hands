@@ -838,9 +838,9 @@ span.feature-review {margin-left: 10px;}
 .grid-container {
   display: grid;
   grid-template-areas: 
-    'header header header header header header' 
-    'left left middle middle right right' 
-    'footer footer footer footer footer footer';
+    'header header header' 
+    'left middle right ' 
+    'footer footer footer';
   /* grid-column-gap: 10px; - if you want gap between the columns */
 } 
 
@@ -878,11 +878,11 @@ span.feature-review {margin-left: 10px;}
 @media (max-width: 600px) {
   .grid-container  {
     grid-template-areas: 
-      'header header header header header header' 
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
-      'right right right right right right' 
-      'footer footer footer footer footer footer';
+      'header header header' 
+      'left' 
+      'middle' 
+      'right' 
+      'footer footer footer';
   }
 }
 
