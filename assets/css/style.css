@@ -75,9 +75,12 @@ ul{
     margin: 0 auto;
     list-style: none;
 }
-ul li {
+ul {
 	list-style: none;
-	
+}
+li {
+    display: inline;
+}
 }
 select,input,textarea,button{box-shadow:none;outline:0!important;}
 button {background: transparent;border: 0;}
