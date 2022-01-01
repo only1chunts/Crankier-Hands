@@ -824,31 +824,67 @@ span.feature-review {margin-left: 10px;}
 /*-------------------------------------
         10. item-blocks
 --------------------------------------*/
-.carousel {
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
 }
 
-.jumbotron,
-.carousel-item {
-    height: 270px;
-    border-radius: 0;
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.jumbotron {
-    background-color: #e0e8ef;
-    padding: 0px 5px 0px 5px;
-    margin: 0px 0px 5px 0px;
+/* Style the left column */
+.left {
+  grid-area: left;
 }
 
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
 
-.jumbotron p {
-    font-size: 1.1em;
+/* Style the right column */
+.right {
+  grid-area: right;
 }
-.jumbotron h5 {
-    font-size: 1.6em;
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
-	
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
 
 /*-------------------------------------
         10. News-letter
