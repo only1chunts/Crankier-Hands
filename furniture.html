@@ -3,13 +3,30 @@ layout : default
 ---
 <br>
 <br>
+{% for item in site.data.furniture.items %}
+<div class="grid-container">
+  <div class="header">
+		<p>{{item.name}}<br>
+		{{item.description}}<br></p>
+  </div>
+  <div class="left"><img src={{item.image1}} width="150" height="150"></div>
+  <div class="middle"><img src={{item.image2}} width="150" height="150"></div>  
+  <div class="right"><img src={{item.image3}} width="150" height="150"></div>
+  <div class="footer">
+  <p>{{item.price}}</p>
+  </div>
+</div>
+{% endfor %}
 
+<!--
 <div class="row">
-	{% for item in site.data.furniture.items %}
-		{{item.name}}<br>
-		{{item.description}}<br>
-		{{item.price}}<br>
 	<div class="col-sm-7">
+			{% for item in site.data.furniture.items %}
+			{{item.name}}<br>
+			{{item.description}}<br>
+			{{item.price}}<br>
+	</div>
+		<div class="col-sm-7">
 			<div class="single-new-arrival-bg">
 				<img src={{item.image1}} width="150" height="150">
 			</div>
@@ -19,7 +36,7 @@ layout : default
 			<div class="single-new-arrival-bg">
 				<img src={{item.image3}} width="150" height="150">
 			</div>
-	</div> <!-- ./col-sm-7 -->
+		</div> <!-- ./col-sm-7 ->
 	{% endfor %}
 </div> <!-- ./row-->
 <!-- <br>
