@@ -1,37 +1,21 @@
 ---
 layout : default
 ---
-
-		<!--new-arrivals start -->
-		<section id="new-arrivals" class="new-arrivals">
-			<div class="container">
-				<div class="section-header">
-					<h2>Bric-<span>a-</span>Brac</h2>
-				</div><!--/.section-header-->
-				<div class="new-arrivals-content">
-					<div class="row">
-						{% for item in site.data.bricabrac.items %}
-						<div class="col-md-3 col-sm-4">
-							<div class="single-new-arrival">
-								<div class="single-new-arrival-bg">
-									<img src={{item.image1}} alt={{item.name}}>
-									<div class="single-new-arrival-bg-overlay"></div>
-									<div class="new-arrival-cart">
-										<p>{{item.description}}</p>
-										<p class="arrival-review pull-right">
-											<span class="lnr lnr-heart"></span>
-											<span class="lnr lnr-frame-expand"></span>
-										</p>
-									</div>
-								</div>
-								<div> <h4>{{item.name}}</h4>
-								</div>
-								<p class="arrival-product-price">{{item.price}}</p>
-							</div>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-			</div><!--/.container-->
-		
-		</section><!--/.new-arrivals-->
+<br>
+<br>
+<br>
+{% for item in site.data.bricabrac.items %}
+<div class="row" align="center" width="100%">
+<ul>
+  <li>
+		<p><a href="{{base.url.}}#{{item.name}}" id="{{item.name}}"> <b>{{item.name}}</b></a><br>
+		{{item.description}}<br></p>
+		{{item.price}}</p>
+  </li>
+  {% for image in item.images %}
+  <li><img src={{image.location}} width="150" height="150"></li>
+  {% endfor %}
+</ul>
+</div>
+<br> 
+{% endfor %}
