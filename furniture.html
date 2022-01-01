@@ -3,17 +3,18 @@ layout : default
 ---
 <br>
 <br>
+<br>
 {% for item in site.data.furniture.items %}
-<div class="grid-container">
-  <div class="header">
+<ul>
+  <li>
 		<p>{{item.name}}<br>
 		{{item.description}}<br></p>
 		{{item.price}}</p>
-  </div>
-  <div class="left"><img src={{item.image1}} width="150" height="150"></div>
-  <div class="left"><img src={{item.image2}} width="150" height="150"></div>  
-  <div class="left"><img src={{item.image3}} width="150" height="150"></div>
-</div>
+  </li>
+  <img src={{item.image1}} width="150" height="150"></div>
+  <img src={{item.image2}} width="150" height="150"></div>  
+  <img src={{item.image3}} width="150" height="150"></div>
+</ul>
 {% endfor %}
 
 <!--
