@@ -820,6 +820,36 @@ span.feature-review {margin-left: 10px;}
     height: 220px;
 }
 .clients .item {text-align: center;}
+
+/*-------------------------------------
+        10. item-blocks
+--------------------------------------*/
+.carousel {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.jumbotron,
+.carousel-item {
+    height: 270px;
+    border-radius: 0;
+}
+
+.jumbotron {
+    background-color: #e0e8ef;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 0px 5px 0px;
+}
+
+
+.jumbotron p {
+    font-size: 1.1em;
+}
+.jumbotron h5 {
+    font-size: 1.6em;
+}
+	
+
 /*-------------------------------------
         10. News-letter
 --------------------------------------*/

@@ -1,6 +1,40 @@
 ---
 layout : default
 ---
+{% for item in site.data.furniture.items %}
+ <div class="row">
+
+        <!--conference info-->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 col-xl-4 offset-xl-1">
+
+            <div class="jumbotron">
+                <h5 class="text-center mt-0">{{ item.name }}</h5>
+                <p class="text-center mt-4 mb-4">{{ item.description }}</p>
+                <p class="text-center mb-0">{{ item.price }}</p>
+            </div>
+
+        </div>     
+
+        <!--slide show-->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+                
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="{{ item.image1 }}" >
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="{{ item.image2 }}" >
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="{{ item.image3 }}" >
+                            </div>
+                            
+                        </div>
+                </div>
+        </div>
+    </div>
+{% endfor %}
 <!--
 <div class="row">
 	{% for item in site.data.furniture.items %}
@@ -19,7 +53,7 @@ layout : default
 			</div>
 	</div> <!-- ./col-sm-7 ->
 	{% endfor %}
-</div> <!-- ./row-->
+</div> <!-- ./row->
 <br>
 <br>
 <br>
@@ -32,8 +66,8 @@ layout : default
 				<h2>{{item.name}} - {{item.price}}</h2><br>
 				<h4>{{item.description}}</h4>
 					<div class="row">
-						<div> <!-- class="col-sm-3"-->
-							<div> <!-- class="single-populer-products"-->
+						<div> <!-- class="col-sm-3"->
+							<div> <!-- class="single-populer-products"->
 									<img src="{{item.image1}}" width="150" height="150">
 							</div>
 						</div>
@@ -52,5 +86,1453 @@ layout : default
 				<br>
 				</p>
 				{% endfor %}
-			</div> <!-- ./container -->
+			</div> <!-- ./container ->
 </p>
+
+<ul class="product-cards ">
+	<li class="product-cards__item">
+		<article class="product-card" data-list-position="0">
+			<a href="/product/orchard-splash-3-function-hand-shower" class="card__link" title="View our Orchard Splash 3 function hand shower by Orchard bathrooms" data-instant="">
+				<div class="tag tag--offer tag--saving-percentage">
+				<span class="tag__text">74% off</span>
+				</div>
+				<div class="product-card__image">
+					<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/680d817b-f1ba-4e68-bb26-cf9e8931fafc.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/680d817b-f1ba-4e68-bb26-cf9e8931fafc.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Splash Handset" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+				</div>
+				<div class="product-card__content">                        
+					<div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            
+						<div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                
+							<div class="wtSP-reset wtSP-icon"></div>                                
+							<div class="wtSP-reset wtSP-txt">9 purchased this week.</div>                                
+							<div class="wtSP-reset wtSP-decor"></div>                            
+						</div>
+					</div> 
+						<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Orchard bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Orchard Splash 3 function hand shower</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£5.52</span>
+<span class="price price--was text text--v5">£6.49</span>
+<span class="price price--was text text--v5">£21.99</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Extra 15% off applied</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-HS08" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="HS08" data-quantity-input="basket-button-qty-HS08" data-product-id="42dd897e-c1bd-447b-9abc-d280c34b913f" data-product-name="Orchard Splash 3 function hand shower" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="HS08" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="HS08" data-csis="HS08" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="440b72e8-7630-4e76-a876-604ceaca28a0" data-product-csi="SLKIT02" data-product-name="Orchard Pure sliding shower rail and shelf kit" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-list-position="1">
+<a href="/product/orchard-pure-sliding-shower-rail-and-shelf-kit" class="card__link" title="View our Orchard Pure sliding shower rail and shelf kit by Orchard bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">74% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/bbca9b9d-38d9-431c-b326-ad7010380b69.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/bbca9b9d-38d9-431c-b326-ad7010380b69.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Orchard Pure sliding shower rail and shelf kit" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom"></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Orchard bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Orchard Pure sliding shower rail and shelf kit</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£46.74</span>
+<span class="price price--was text text--v5">£54.99</span>
+<span class="price price--was text text--v5">£185</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Extra 15% off applied</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<p class="stock-status in-stock">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-SLKIT02" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="SLKIT02" data-quantity-input="basket-button-qty-SLKIT02" data-product-id="440b72e8-7630-4e76-a876-604ceaca28a0" data-product-name="Orchard Pure sliding shower rail and shelf kit" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SLKIT02" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SLKIT02" data-csis="SLKIT02" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="5263b47a-d5b7-4590-9fe1-4ee88b89cd08" data-product-csi="HSSET18" data-product-name="Mode Slim square stainless steel 300mm shower head and wall arm" data-product-brand="Mode bathrooms" data-product-category="Showers" data-list-position="2">
+<a href="/product/mode-slim-square-stainless-steel-300mm-shower-head-and-wall-arm" class="card__link" title="View our Mode Slim square stainless steel 300mm shower head and wall arm by Mode bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">33% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/cfeaca97-c441-4e47-9e13-0e7e34e700eb.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/cfeaca97-c441-4e47-9e13-0e7e34e700eb.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Mode Slim square stainless steel 300mm shower head and wall arm" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">4 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/aa0948c9-52e7-44bd-a14f-5dbb0ba16306.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/aa0948c9-52e7-44bd-a14f-5dbb0ba16306.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Mode bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Mode Slim square stainless steel 300mm shower head and wall arm</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£84.99</span>
+<span class="price price--was text text--v5">£126.98</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>January Sale</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (11)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-HSSET18" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="HSSET18" data-quantity-input="basket-button-qty-HSSET18" data-product-id="5263b47a-d5b7-4590-9fe1-4ee88b89cd08" data-product-name="Mode Slim square stainless steel 300mm shower head and wall arm" data-product-brand="Mode bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="HSSET18" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="HSSET18" data-csis="HSSET18" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="22d719c2-1889-4152-8968-d1d3d278eaa8" data-product-csi="SHK40" data-product-name="Clarity thermostatic shower valve with riser rail kit" data-product-brand="Clarity" data-product-category="Showers" data-list-position="3">
+<a href="/product/clarity-thermostatic-shower-valve-with-riser-rail-kit" class="card__link" title="View our Clarity thermostatic shower valve with riser rail kit by Clarity" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">12% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/a8763724-b0b0-44c3-b54a-646cd7b35202.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/a8763724-b0b0-44c3-b54a-646cd7b35202.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Clarity thermostatic shower valve with riser rail kit" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">34 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/92c12401-cc05-4262-8ce8-95ba174c47f7.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/92c12401-cc05-4262-8ce8-95ba174c47f7.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Clarity logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Clarity thermostatic shower valve with riser rail kit</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£96.99</span>
+<span class="price price--was text text--v5">£110.98</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>January Sale</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (196)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-SHK40" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="SHK40" data-quantity-input="basket-button-qty-SHK40" data-product-id="22d719c2-1889-4152-8968-d1d3d278eaa8" data-product-name="Clarity thermostatic shower valve with riser rail kit" data-product-brand="Clarity" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SHK40" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SHK40" data-csis="SHK40" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="3bb60cb4-fbab-48e3-a11d-7369956dd3ee" data-product-csi="SHS7B" data-product-name="Orchard Wye black thermostatic bar valve shower system" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-list-position="4">
+<a href="/product/orchard-wye-black-thermostatic-bar-valve-shower-system" class="card__link" title="View our Orchard Wye black thermostatic bar valve shower system by Orchard bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">10% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/b51f0a6e-b1d8-4045-828d-7c7beef00a90.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/b51f0a6e-b1d8-4045-828d-7c7beef00a90.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Orchard Wye black thermostatic bar valve shower system" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">94 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Orchard bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Orchard Wye black thermostatic bar valve shower system</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£152.10</span>
+<span class="price price--was text text--v5">£169</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Jan Price Drop: 10% off</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (84)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-SHS7B" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="SHS7B" data-quantity-input="basket-button-qty-SHS7B" data-product-id="3bb60cb4-fbab-48e3-a11d-7369956dd3ee" data-product-name="Orchard Wye black thermostatic bar valve shower system" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SHS7B" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+ <button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SHS7B" data-csis="SHS7B" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="110d9e8f-b029-424a-9011-0d2c4edc916b" data-product-csi="SHK35" data-product-name="Clarity square head shower riser kit" data-product-brand="Clarity" data-product-category="Showers" data-list-position="5">
+<a href="/product/clarity-square-head-shower-riser-kit" class="card__link" title="View our Clarity square head shower riser kit by Clarity" data-instant="">
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/bc8c296e-7a46-4af8-9903-649c7100efbe.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/bc8c296e-7a46-4af8-9903-649c7100efbe.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Clarity square head shower riser kit" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">52 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/92c12401-cc05-4262-8ce8-95ba174c47f7.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/92c12401-cc05-4262-8ce8-95ba174c47f7.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Clarity logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Clarity square head shower riser kit</h2>
+<div class="prices">
+<span class="price price--lg ">£58.99</span>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (102)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+ <label>
+<input type="hidden" id="basket-button-qty-SHK35" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="SHK35" data-quantity-input="basket-button-qty-SHK35" data-product-id="110d9e8f-b029-424a-9011-0d2c4edc916b" data-product-name="Clarity square head shower riser kit" data-product-brand="Clarity" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SHK35" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SHK35" data-csis="SHK35" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="a40823e8-842c-42f2-9a79-678e28ef553c" data-product-csi="SHSET127" data-product-name="Orchard Eden round thermostatic exposed mixer shower" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-list-position="6">
+<a href="/product/orchard-eden-round-thermostatic-exposed-mixer-shower" class="card__link" title="View our Orchard Eden round thermostatic exposed mixer shower by Orchard bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">10% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/53943ee9-e7c7-422f-a515-e7a01b80daf7.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/53943ee9-e7c7-422f-a515-e7a01b80daf7.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Orchard Eden round thermostatic exposed mixer shower" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">40 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Orchard bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Orchard Eden round thermostatic exposed mixer shower</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£121.50</span>
+<span class="price price--was text text--v5">£135</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Jan Price Drop: 10% off</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (63)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-SHSET127" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="SHSET127" data-quantity-input="basket-button-qty-SHSET127" data-product-id="a40823e8-842c-42f2-9a79-678e28ef553c" data-product-name="Orchard Eden round thermostatic exposed mixer shower" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SHSET127" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SHSET127" data-csis="SHSET127" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="66ed441b-b0bb-4e24-9e67-e0159ca7cf37" data-product-csi="SHS7" data-product-name="Orchard Wye thermostatic square shower system" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-list-position="7">
+<a href="/product/orchard-wye-thermostatic-square-shower-system" class="card__link" title="View our Orchard Wye thermostatic square shower system by Orchard bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">10% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/0ab8d306-d65f-476d-8a81-a25467d9acf2.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/0ab8d306-d65f-476d-8a81-a25467d9acf2.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Tetra Square Head Shower Riser System" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">58 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Orchard bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Orchard Wye thermostatic square shower system</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£157.50</span>
+<span class="price price--was text text--v5">£175</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Jan Price Drop: 10% off</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (208)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-SHS7" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="SHS7" data-quantity-input="basket-button-qty-SHS7" data-product-id="66ed441b-b0bb-4e24-9e67-e0159ca7cf37" data-product-name="Orchard Wye thermostatic square shower system" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SHS7" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SHS7" data-csis="SHS7" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="e6b9f1a7-cfb9-431c-8167-667043515407" data-product-csi="MINEX01" data-product-name="Mode Harrison exposed thermostatic shower valve" data-product-brand="Mode bathrooms" data-product-category="Showers" data-list-position="8">
+<a href="/product/mode-harrison-exposed-thermostatic-shower-valve" class="card__link" title="View our Mode Harrison exposed thermostatic shower valve by Mode bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">10% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/57344b76-46ee-426f-a154-d8702b60c9e3.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/57344b76-46ee-426f-a154-d8702b60c9e3.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Minimalist Dual Exposed Valve" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">22 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/aa0948c9-52e7-44bd-a14f-5dbb0ba16306.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/aa0948c9-52e7-44bd-a14f-5dbb0ba16306.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Mode bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Mode Harrison exposed thermostatic shower valve</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£134.10</span>
+<span class="price price--was text text--v5">£149</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Jan Price Drop: 10% off</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (51)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-MINEX01" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="MINEX01" data-quantity-input="basket-button-qty-MINEX01" data-product-id="e6b9f1a7-cfb9-431c-8167-667043515407" data-product-name="Mode Harrison exposed thermostatic shower valve" data-product-brand="Mode bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="MINEX01" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="MINEX01" data-csis="MINEX01" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="2595b71a-06f7-4e37-b2a4-6806170d59ee" data-product-csi="SHSET128" data-product-name="Orchard Elsdon square thermostatic exposed mixer shower" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-list-position="9">
+<a href="/product/orchard-elsdon-square-thermostatic-exposed-mixer-shower" class="card__link" title="View our Orchard Elsdon square thermostatic exposed mixer shower by Orchard bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">10% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/46ab83ed-490e-4a00-abff-495dae18aabc.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/46ab83ed-490e-4a00-abff-495dae18aabc.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Orchard Elsdon square thermostatic exposed mixer shower" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">28 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Orchard bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Orchard Elsdon square thermostatic exposed mixer shower</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£130.50</span>
+<span class="price price--was text text--v5">£145</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Jan Price Drop: 10% off</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (52)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-SHSET128" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="SHSET128" data-quantity-input="basket-button-qty-SHSET128" data-product-id="2595b71a-06f7-4e37-b2a4-6806170d59ee" data-product-name="Orchard Elsdon square thermostatic exposed mixer shower" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SHSET128" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SHSET128" data-csis="SHSET128" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="32cb212c-5cfd-489b-a903-6aca9fff11a6" data-product-csi="MIRAH07" data-product-name="Mira Honesty ERD thermostatic mixer shower" data-product-brand="Mira showers" data-product-category="Showers" data-list-position="10">
+<a href="/product/mira-honesty-erd-thermostatic-mixer-shower" class="card__link" title="View our Mira Honesty ERD thermostatic mixer shower by Mira showers" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">20% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/99a51dd1-b876-45cb-9c2f-bb48d5dbc450.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/99a51dd1-b876-45cb-9c2f-bb48d5dbc450.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Mira Honesty ERD thermostatic mixer shower" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">36 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/d38674f1-affa-40c8-a833-deeeb9067b64.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/d38674f1-affa-40c8-a833-deeeb9067b64.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Mira showers logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Mira Honesty ERD thermostatic mixer shower</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£276</span>
+<span class="price price--was text text--v5">£345</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Extra 20% off applied</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (18)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-MIRAH07" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="MIRAH07" data-quantity-input="basket-button-qty-MIRAH07" data-product-id="32cb212c-5cfd-489b-a903-6aca9fff11a6" data-product-name="Mira Honesty ERD thermostatic mixer shower" data-product-brand="Mira showers" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="MIRAH07" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="MIRAH07" data-csis="MIRAH07" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="efa725d4-8ba5-4542-9740-13f5ce746218" data-product-csi="SHS5" data-product-name="Orchard Derwent square shower riser system" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-list-position="11">
+<a href="/product/orchard-derwent-square-shower-riser-system" class="card__link" title="View our Orchard Derwent square shower riser system by Orchard bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">10% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/1f562bd3-1d70-41a7-a68c-4815cdf1dca5.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/1f562bd3-1d70-41a7-a68c-4815cdf1dca5.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Derwent Square Head Shower Riser System" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">23 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Orchard bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Orchard Derwent square shower riser system</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£139.50</span>
+<span class="price price--was text text--v5">£155</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Jan Price Drop: 10% off</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (60)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-SHS5" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="SHS5" data-quantity-input="basket-button-qty-SHS5" data-product-id="efa725d4-8ba5-4542-9740-13f5ce746218" data-product-name="Orchard Derwent square shower riser system" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SHS5" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SHS5" data-csis="SHS5" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="980384ce-1832-4d16-aa91-249edfe92025" data-product-csi="SHK03A" data-product-name="Mode Ellis thermostatic triple shower valve complete shower set" data-product-brand="Mode bathrooms" data-product-category="Showers" data-list-position="12">
+<a href="/product/mode-ellis-thermostatic-triple-shower-valve-complete-shower-set?options=size|square_200mm_head" class="card__link" title="View our Mode Ellis thermostatic triple shower valve complete shower set by Mode bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">35% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/cf7225be-e212-4ace-b12c-90b56e6bf76e.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/cf7225be-e212-4ace-b12c-90b56e6bf76e.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Mode Ellis thermostatic triple shower valve complete shower set" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+<span class="product-card__multiple-text">Multiple sizes</span>
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">13 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/aa0948c9-52e7-44bd-a14f-5dbb0ba16306.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/aa0948c9-52e7-44bd-a14f-5dbb0ba16306.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Mode bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Mode Ellis thermostatic triple shower valve complete shower set</h2>
+<div class="prices">
+<span class="price price--from">From</span>
+<span class="price price--lg  price--reduced ">£309</span>
+<span class="price price--was text text--v5">£478.47</span>
+</div>
+ <div class="promotions">
+<div class="pill pill--promotion">
+<span>Jan Price Drop: 10% off</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (131)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<a href="/product/mode-ellis-thermostatic-triple-shower-valve-complete-shower-set?options=size|square_200mm_head" title="View our Mode Ellis thermostatic triple shower valve complete shower set" class="btn btn--shopping-inverse product-card__choose-size-btn" data-tracking="product-card-button" role="button" aria-pressed="false" tabindex="0">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-plus"></use>
+</svg>
+Choose size
+</a>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SHK03A" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SHK03A" data-csis="SHK03A,SHK031,SHK032,SHK033" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="90a85856-709a-49a1-8200-bee986ed42b4" data-product-csi="TRIASPB85" data-product-name="Triton Aspirante electric shower brushed steel" data-product-brand="Triton" data-product-category="Showers" data-list-position="13">
+<a href="/product/triton-aspirante-electric-shower-brushed-steel?options=wattage|8.5kw" class="card__link" title="View our Triton Aspirante electric shower brushed steel by Triton" data-instant="">
+<div class="product-card__image">
+<img class="lazyload lazyloaded" src="https://images.victoriaplum.com/vp_prod_images/33e731b7-b435-48d1-838a-dacf69340401.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/33e731b7-b435-48d1-838a-dacf69340401.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Triton Aspirante 8.5kw electric shower brushed steel" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+<span class="product-card__multiple-text">Multiple options</span>
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">14 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image" src="https://images.victoriaplum.com/brands/logos/098e838d-2d61-47ca-a790-87521fc842b5.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/098e838d-2d61-47ca-a790-87521fc842b5.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Triton logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Triton Aspirante electric shower brushed steel</h2>
+<div class="prices">
+<span class="price price--from">From</span>
+<span class="price price--lg ">£139</span>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (37)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<a href="/product/triton-aspirante-electric-shower-brushed-steel?options=wattage|8.5kw" title="View our Triton Aspirante electric shower brushed steel" class="btn btn--shopping-inverse product-card__choose-size-btn" data-tracking="product-card-button" role="button" aria-pressed="false" tabindex="0">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-plus"></use>
+</svg>
+Choose option
+</a>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="TRIASPB85" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+ <button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="TRIASPB85" data-csis="TRIASPB85,TRIASPB95" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="bcd1f606-d5a5-4027-ba3c-83c1b997a799" data-product-csi="SHS31" data-product-name="Orchard Low pressure thermostatic exposed mixer shower" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-list-position="14">
+<a href="/product/orchard-low-pressure-thermostatic-exposed-mixer-shower" class="card__link" title="View our Orchard Low pressure thermostatic exposed mixer shower by Orchard bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">15% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload" src="https://images.victoriaplum.com/vp_prod_images/0bebb32a-2436-4d6d-8c00-0d5fd38f7bb6.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/0bebb32a-2436-4d6d-8c00-0d5fd38f7bb6.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Orchard Low pressure thermostatic exposed mixer shower" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">2 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Orchard bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Orchard Low pressure thermostatic exposed mixer shower</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£216.75</span>
+<span class="price price--was text text--v5">£255</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Extra 15% off applied</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (19)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-SHS31" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="SHS31" data-quantity-input="basket-button-qty-SHS31" data-product-id="bcd1f606-d5a5-4027-ba3c-83c1b997a799" data-product-name="Orchard Low pressure thermostatic exposed mixer shower" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SHS31" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SHS31" data-csis="SHS31" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+ </li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="819c32f1-39d8-4a4d-b7f9-ee8270b5a768" data-product-csi="SPASET16" data-product-name="Mode Spa square thermostatic twin shower valve with diverter and wall shower outlet set" data-product-brand="Mode bathrooms" data-product-category="Showers" data-list-position="15">
+<a href="/product/mode-spa-square-thermostatic-twin-shower-valve-with-diverter-and-wall-shower-outlet-set?options=size|square_250mm_head" class="card__link" title="View our Mode Spa square thermostatic twin shower valve with diverter and wall shower outlet set by Mode bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">44% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload" src="https://images.victoriaplum.com/vp_prod_images/c5d4e27c-e081-4e35-8986-db7ef02a999a.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/c5d4e27c-e081-4e35-8986-db7ef02a999a.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Spa Square Thermostatic Twin Shower Valve with Diverter and Slider Rail Set" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+<span class="product-card__multiple-text">Multiple sizes</span>
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">22 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/aa0948c9-52e7-44bd-a14f-5dbb0ba16306.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/aa0948c9-52e7-44bd-a14f-5dbb0ba16306.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Mode bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Mode Spa square thermostatic twin shower valve with diverter and wall shower outlet s...</h2>
+<div class="prices">
+<span class="price price--from">From</span>
+<span class="price price--lg  price--reduced ">£233.10</span>
+<span class="price price--was text text--v5">£259</span>
+<span class="price price--was text text--v5">£417.97</span>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (38)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<a href="/product/mode-spa-square-thermostatic-twin-shower-valve-with-diverter-and-wall-shower-outlet-set?options=size|square_250mm_head" title="View our Mode Spa square thermostatic twin shower valve with diverter and wall shower outlet set" class="btn btn--shopping-inverse product-card__choose-size-btn" data-tracking="product-card-button" role="button" aria-pressed="false" tabindex="0">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-plus"></use>
+</svg>
+Choose size
+</a>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SPASET16" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SPASET16" data-csis="SPASET16,SPASET17,SPASET18" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="84903f81-7856-4c13-84f4-6b106a5f12c8" data-product-csi="TRAEX01" data-product-name="Orchard Dulwich exposed thermostatic shower valve" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-list-position="16">
+<a href="/product/orchard-dulwich-exposed-thermostatic-shower-valve" class="card__link" title="View our Orchard Dulwich exposed thermostatic shower valve by Orchard bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">15% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload" src="https://images.victoriaplum.com/vp_prod_images/acc6a08a-941a-4711-80bb-7c40f47f94dc.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/acc6a08a-941a-4711-80bb-7c40f47f94dc.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="The Bath Co. Dulwich exposed thermostatic shower valve" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">8 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Orchard bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Orchard Dulwich exposed thermostatic shower valve</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£160.65</span>
+<span class="price price--was text text--v5">£189</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Extra 15% off applied</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (43)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-TRAEX01" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="TRAEX01" data-quantity-input="basket-button-qty-TRAEX01" data-product-id="84903f81-7856-4c13-84f4-6b106a5f12c8" data-product-name="Orchard Dulwich exposed thermostatic shower valve" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="TRAEX01" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="TRAEX01" data-csis="TRAEX01" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="1fca8d36-0daf-4e43-a26b-5c13853fdb64" data-product-csi="HS19" data-product-name="Orchard Douche spray with wall bracket" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-list-position="17">
+<a href="/product/orchard-douche-spray-with-wall-bracket" class="card__link" title="View our Orchard Douche spray with wall bracket by Orchard bathrooms" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">15% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload" src="https://images.victoriaplum.com/vp_prod_images/0092964e-f0a2-4972-9a8e-21c8a5137431.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/0092964e-f0a2-4972-9a8e-21c8a5137431.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Orchard Douche spray with wall bracket" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">7 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Orchard bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Orchard Douche spray with wall bracket</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£22.94</span>
+<span class="price price--was text text--v5">£26.99</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Extra 15% off applied</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (8)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-HS19" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="HS19" data-quantity-input="basket-button-qty-HS19" data-product-id="1fca8d36-0daf-4e43-a26b-5c13853fdb64" data-product-name="Orchard Douche spray with wall bracket" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="HS19" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="HS19" data-csis="HS19" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="d0c51944-e48b-48d1-84c1-28a5cd2187c7" data-product-csi="BRQUSET" data-product-name="Bristan Quadrato thermostatic bar valve shower system" data-product-brand="Bristan" data-product-category="Showers" data-list-position="18">
+<a href="/product/bristan-quadrato-thermostatic-bar-valve-shower-system" class="card__link" title="View our Bristan Quadrato thermostatic bar valve shower system by Bristan" data-instant="">
+<div class="product-card__image">
+<img class="lazyload" src="https://images.victoriaplum.com/vp_prod_images/1e7008f2-4c7b-470c-bf3e-d8afa99d7fd5.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/1e7008f2-4c7b-470c-bf3e-d8afa99d7fd5.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Bristan Quadrato thermostatic bar valve shower system" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">8 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image" src="https://images.victoriaplum.com/brands/logos/b774023f-79ef-46b3-beda-426aba176860.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/b774023f-79ef-46b3-beda-426aba176860.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Bristan logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Bristan Quadrato thermostatic bar valve shower system</h2>
+<div class="prices">
+<span class="price price--lg ">£285</span>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (9)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-BRQUSET" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="BRQUSET" data-quantity-input="basket-button-qty-BRQUSET" data-product-id="d0c51944-e48b-48d1-84c1-28a5cd2187c7" data-product-name="Bristan Quadrato thermostatic bar valve shower system" data-product-brand="Bristan" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="BRQUSET" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="BRQUSET" data-csis="BRQUSET" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="9ec207e3-4be7-4410-b39f-601a13a76601" data-product-csi="MIRAC02" data-product-name="Mira Coda Pro ERD thermostatic mixer shower" data-product-brand="Mira showers" data-product-category="Showers" data-list-position="19">
+<a href="/product/mira-coda-pro-erd-thermostatic-mixer-shower" class="card__link" title="View our Mira Coda Pro ERD thermostatic mixer shower by Mira showers" data-instant="">
+<div class="product-card__image">
+<img class="lazyload" src="https://images.victoriaplum.com/vp_prod_images/5ea45e3b-7c73-4e18-b565-bd8da6bdd48f.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/5ea45e3b-7c73-4e18-b565-bd8da6bdd48f.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Mira Coda Pro ERD thermostatic mixer shower" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">6 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+ <img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/d38674f1-affa-40c8-a833-deeeb9067b64.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/d38674f1-affa-40c8-a833-deeeb9067b64.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Mira showers logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Mira Coda Pro ERD thermostatic mixer shower</h2>
+<div class="prices">
+<span class="price price--lg ">£265</span>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (25)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-MIRAC02" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="MIRAC02" data-quantity-input="basket-button-qty-MIRAC02" data-product-id="9ec207e3-4be7-4410-b39f-601a13a76601" data-product-name="Mira Coda Pro ERD thermostatic mixer shower" data-product-brand="Mira showers" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="MIRAC02" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="MIRAC02" data-csis="MIRAC02" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="24cce843-665b-4fe4-9022-79694f1b96b4" data-product-csi="SHS30" data-product-name="The Bath Co. Camberley rain can thermostatic exposed mixer shower and bath filler" data-product-brand="The bath co" data-product-category="Showers" data-list-position="20">
+<a href="/product/the-bath-co-camberley-rain-can-thermostatic-exposed-mixer-shower-and-bath-filler" class="card__link" title="View our The Bath Co. Camberley rain can thermostatic exposed mixer shower and bath filler by The bath co" data-instant="">
+<div class="tag tag--offer tag--saving-percentage">
+<span class="tag__text">10% off</span>
+</div>
+<div class="product-card__image">
+<img class="lazyload" src="https://images.victoriaplum.com/vp_prod_images/aed4a239-f70f-4c31-aca1-132a3a5b5266.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/aed4a239-f70f-4c31-aca1-132a3a5b5266.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="The Bath Co. Camberley rain can thermostatic exposed mixer shower and bath filler" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">8 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image" src="https://images.victoriaplum.com/brands/logos/bfb6608c-d662-4b24-8fb0-84668686cca5.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/bfb6608c-d662-4b24-8fb0-84668686cca5.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="The bath co logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>The Bath Co. Camberley rain can thermostatic exposed mixer shower and bath filler</h2>
+<div class="prices">
+<span class="price price--lg  price--reduced ">£368.10</span>
+<span class="price price--was text text--v5">£409</span>
+</div>
+<div class="promotions">
+<div class="pill pill--promotion">
+<span>Jan Price Drop: 10% off</span>
+</div>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (6)
+    </span></div>
+<p class="stock-status ">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>Home delivery from Wed 12th Jan</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-SHS30" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="SHS30" data-quantity-input="basket-button-qty-SHS30" data-product-id="24cce843-665b-4fe4-9022-79694f1b96b4" data-product-name="The Bath Co. Camberley rain can thermostatic exposed mixer shower and bath filler" data-product-brand="The bath co" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SHS30" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SHS30" data-csis="SHS30" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="5c4ba01b-1071-4889-85b9-55158d924841" data-product-csi="CNSETRD" data-product-name="Orchard Eden thermostatic twin round shower valve set with handset" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-list-position="21">
+<a href="/product/orchard-eden-thermostatic-twin-round-shower-valve-set-with-handset" class="card__link" title="View our Orchard Eden thermostatic twin round shower valve set with handset by Orchard bathrooms" data-instant="">
+<div class="product-card__image">
+<img class="lazyload" src="https://images.victoriaplum.com/vp_prod_images/04342818-be6e-482d-afec-6e967a064e26.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/04342818-be6e-482d-afec-6e967a064e26.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Orchard Eden thermostatic twin round shower valve set with handset" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">11 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/28101d0b-0e45-49ba-ad8b-4ff6e9c76169.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Orchard bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Orchard Eden thermostatic twin round shower valve set with handset</h2>
+<div class="prices">
+<span class="price price--lg ">£135</span>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (2)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-CNSETRD" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="CNSETRD" data-quantity-input="basket-button-qty-CNSETRD" data-product-id="5c4ba01b-1071-4889-85b9-55158d924841" data-product-name="Orchard Eden thermostatic twin round shower valve set with handset" data-product-brand="Orchard bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="CNSETRD" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="CNSETRD" data-csis="CNSETRD" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="70492227-f039-49d3-806e-fcaa14af4cc3" data-product-csi="SHS1A" data-product-name="Mode Harrison exposed thermostatic mixer shower" data-product-brand="Mode bathrooms" data-product-category="Showers" data-list-position="22">
+<a href="/product/mode-harrison-exposed-thermostatic-mixer-shower" class="card__link" title="View our Mode Harrison exposed thermostatic mixer shower by Mode bathrooms" data-instant="">
+<div class="product-card__image">
+<img class="lazyload" src="https://images.victoriaplum.com/vp_prod_images/989ea001-5f1c-44de-9f1c-78e92a080015.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/989ea001-5f1c-44de-9f1c-78e92a080015.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Minimalist Waifer Round Riser System" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">3 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/aa0948c9-52e7-44bd-a14f-5dbb0ba16306.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/aa0948c9-52e7-44bd-a14f-5dbb0ba16306.png?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Mode bathrooms logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Mode Harrison exposed thermostatic mixer shower</h2>
+<div class="prices">
+<span class="price price--lg ">£249</span>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-4-5"></span> <span class="text review-star__count text--v5">
+        (12)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-SHS1A" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="SHS1A" data-quantity-input="basket-button-qty-SHS1A" data-product-id="70492227-f039-49d3-806e-fcaa14af4cc3" data-product-name="Mode Harrison exposed thermostatic mixer shower" data-product-brand="Mode bathrooms" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="SHS1A" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="SHS1A" data-csis="SHS1A" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+<li class="product-cards__item">
+<article class="product-card i-product-card" data-tracking="product-card" data-added-from="product-listing" data-product-id="c38c85e1-5bb5-4b15-ab97-bbf8d6a58235" data-product-csi="MIRAREAL02" data-product-name="Mira Realm ERD thermostatic mixer shower" data-product-brand="Mira showers" data-product-category="Showers" data-list-position="23">
+<a href="/product/mira-realm-erd-thermostatic-mixer-shower" class="card__link" title="View our Mira Realm ERD thermostatic mixer shower by Mira showers" data-instant="">
+<div class="product-card__image">
+<img class="lazyload" src="https://images.victoriaplum.com/vp_prod_images/315d948b-18c0-4783-9eca-84b94a5f6943.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" data-src="https://images.victoriaplum.com/vp_prod_images/315d948b-18c0-4783-9eca-84b94a5f6943.jpg?auto=format%2Ccompress&amp;h=333&amp;q=55&amp;w=333" width="333" height="333" alt="Mira Realm ERD thermostatic mixer shower" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 333 333'/%3E" loading="lazy">
+</div>
+<div class="product-card__content">                        <div class="wtSP-reset wtSP-wrapper wtSP-category-page wtSP-victoriaplumcom">                            <div class="wtSP-reset wtSP-balloon wtSP-quantity_orders wtSP-QP">                                <div class="wtSP-reset wtSP-icon"></div>                                <div class="wtSP-reset wtSP-txt">6 purchased this week.</div>                                <div class="wtSP-reset wtSP-decor"></div>                            </div></div> 
+<img class="lazyload product-card__brand-image lazyloaded" src="https://images.victoriaplum.com/brands/logos/d38674f1-affa-40c8-a833-deeeb9067b64.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" data-src="https://images.victoriaplum.com/brands/logos/d38674f1-affa-40c8-a833-deeeb9067b64.jpg?auto=format%2Ccompress&amp;h=22&amp;q=55&amp;w=100" width="100" height="22" alt="Mira showers logo" data-placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22'/%3E" loading="lazy">
+<h2>Mira Realm ERD thermostatic mixer shower</h2>
+<div class="prices">
+<span class="price price--lg ">£469</span>
+</div>
+</div>
+<footer class="product-card__footer">
+<div class="review-stars review-stars--sm"><span class="stars stars-5-0"></span> <span class="text review-star__count text--v5">
+        (3)
+    </span></div>
+<p class="stock-status in-stock">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-delivery"></use>
+</svg>
+<span>In stock - Free delivery</span>
+</p>
+</footer>
+</a>
+<div class="product-card__buttons">
+<label>
+<input type="hidden" id="basket-button-qty-MIRAREAL02" value="1">
+</label>
+<button class="btn btn--shopping-inverse product-card__add-to-basket-btn i-add-to-basket" data-tracking="product-card-button" data-csi="MIRAREAL02" data-quantity-input="basket-button-qty-MIRAREAL02" data-product-id="c38c85e1-5bb5-4b15-ab97-bbf8d6a58235" data-product-name="Mira Realm ERD thermostatic mixer shower" data-product-brand="Mira showers" data-product-category="Showers" data-show-essentials="true" data-added-from="product-listing" type="button" role="button" aria-pressed="false" tabindex="0">
+<span class="icon btn__icon btn__icon--left default-add-to-basket-icon">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-basket"></use>
+</svg>
+</span>
+<span class="icon btn__icon btn__icon--left item-in-basket-icon hidden">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-check"></use>
+</svg>
+</span>
+<span class="button__text">
+Add to basket
+</span>
+</button>
+<button class="btn btn--checkbox product-card__add-to-compare-btn i-add-to-comparison i-add-to-comparison-detail" type="button" role="button" data-csi="MIRAREAL02" data-location="product-listing" aria-pressed="false">
+<span class="small-mobile-text">Compare</span><span class="mobile-plus-text">Add to compare</span>
+</button>
+<button class="btn btn--favourite product-card__favourite-btn  i-add-favourite " type="button" aria-label="Favourite" data-popup="" data-theme="light" data-csi="MIRAREAL02" data-csis="MIRAREAL02" data-location="product-listing">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" class="icon-glyph">
+<use xlink:href="https://victoriaplum.com/images/svg-sprite/icon-map.d35749d1c56267a70b9b.svg#glyph-heart-animate"></use>
+</svg>
+</button>
+</div>
+</article>
+</li>
+</ul>
+-->
