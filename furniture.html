@@ -8,13 +8,11 @@ layout : default
   <div class="header">
 		<p>{{item.name}}<br>
 		{{item.description}}<br></p>
+		{{item.price}}</p>
   </div>
   <div class="left"><img src={{item.image1}} width="150" height="150"></div>
   <div class="middle"><img src={{item.image2}} width="150" height="150"></div>  
   <div class="right"><img src={{item.image3}} width="150" height="150"></div>
-  <div class="footer">
-  <p>{{item.price}}</p>
-  </div>
 </div>
 {% endfor %}
 
