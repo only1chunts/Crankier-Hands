@@ -1,0 +1,71 @@
+---
+layout : default
+---
+<br>
+<br>
+<br>
+{% for item in site.data.bricabrac.items %}
+<div class="row" align="center" width="100%">
+<ul>
+  <li>
+		<p><a href="{{base.url.}}#{{item.name}}" id="{{item.name}}"> <b>{{item.name}}</b></a><br>
+		{{item.description}}<br></p>
+		{{item.price}}</p>
+  </li>
+  {% for image in item.images %}
+  <li><img src={{image.location}} width="150" height="150"></li>
+  {% endfor %}
+</ul>
+</div>
+<br> 
+{% endfor %}
+
+
+  <div>
+    <h1>Search</h1>
+	<div id="header"></div>
+	<div>
+		Search the item names and descriptions here.<br><br>
+	</div>
+	<form role="form">
+        <div class="form-group">
+          <input type="input" class="form-control input-lg" id="txt-search" placeholder="Start typing to searh">
+        </div>
+	</form>
+	<div id="filter-records"></div>
+	<div id="footer"></div>
+  </div>
+</body>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    var data = 
+{% include site.data.bricabrac.items %}
+{% include site.data.furniture.items %}
+;
+
+$('#txt-search').keyup(function(){
+            var searchField = $(this).val();
+			if(searchField === '')  {
+				$('#filter-records').html('');
+				return;
+			}
+			
+            var regex = new RegExp(searchField, "i");
+            var output = '<div class="row">';
+            var count = 1;
+			  $.each(data, function(key, val){
+				if ((val.mixsId.search(regex) != -1) || (val.label.search(regex) != -1) || (val.definition.search(regex) != -1)) {
+				  output += '<a href=' +val.name+ '><h5>' +val.name+ '</h5></a>'; 
+				  if(count%2 == 0){
+					output += '</div><div class="row">'
+				  }
+				  count++;
+				}
+			  });
+			  output += '</div>';
+			  $('#filter-records').html(output);
+        });
+  });
+</script>
