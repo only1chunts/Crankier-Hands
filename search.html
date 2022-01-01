@@ -26,8 +26,8 @@ layout : default
   $(document).ready(function(){
 
     var data = 
-{% include site.data.bricabrac.items %}
-{% include site.data.furniture.items %}
+{% for item in site.data.bricabrac.items %}
+{% for item in site.data.furniture.items %}
 ;
 
 $('#txt-search').keyup(function(){
