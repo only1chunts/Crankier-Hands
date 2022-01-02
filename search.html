@@ -40,8 +40,8 @@ $('#txt-search').keyup(function(){
             var output = '<div class="row">';
             var count = 1;
 			  $.each(data, function(key, val){
-				if ((val.name.search(regex) != -1) || (val.price.search(regex) != -1) || (val.description.search(regex) != -1)) {
-				  output += '<a href={{baseurl}}#' +val.name+ '><h5>' +val.name+ '</h5></a>'; 
+				if ((val.item.name.search(regex) != -1) || (val.item.price.search(regex) != -1) || (val.item.description.search(regex) != -1)) {
+				  output += '<a href={{baseurl}}#' +val.item.name+ '><h5>' +val.item.name+ '</h5></a>'; 
 				  if(count%2 == 0){
 					output += '</div><div class="row">'
 				  }
