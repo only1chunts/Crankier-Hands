@@ -25,8 +25,9 @@ layout : default
 <script type="text/javascript">
   $(document).ready(function(){
 
-    let fileContents = fs.readFileSync('{% include furniture.yml%}');
-    var data = yaml.safeLoad(fileContents); 
+    var data = 
+{% include furniture.json %}
+;
 
 $('#txt-search').keyup(function(){
             var searchField = $(this).val();
